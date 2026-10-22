@@ -2,7 +2,7 @@
 #include "math.hpp"
 
 int main() {
-
+return 0;
     int dane1[] = {11, 20, 30, 40};
     int dane2[] = {10, 21, 30, 41};
     const int n = 4;

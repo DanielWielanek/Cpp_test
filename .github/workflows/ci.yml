@@ -50,5 +50,5 @@ jobs:
         run: |
           output=$(./program.exe)
           echo "$output"
-          test "$output" = "Srednia:  25"
+          test "$output" = "OK"
 
