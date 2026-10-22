@@ -2,6 +2,8 @@
 #include "math.hpp"
 
 int main() {
-    std::cout << "Wynik: " << add(2, 3) << '\n';
+    int dane[] = {10, 20, 30, 40};
+    int n = sizeof(dane) / sizeof(dane[0]);
+    std::cout << "Srednia: " << srednia(dane, n) << '\n';
     return 0;
 }

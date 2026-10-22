@@ -1,5 +1,11 @@
 #pragma once
 
-inline int add(int a, int b) {
-    return a + b;
+double srednia(int tab[], int n) {
+    int suma = 0;
+
+    for (int i = 0; i <= n; i++) {
+        suma += tab[i];
+    }
+
+    return suma / n;
 }

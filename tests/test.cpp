@@ -2,13 +2,17 @@
 #include "math.hpp"
 
 int main() {
-    if (add(2, 3) != 5) {
-        std::cerr << "FAIL: add(2, 3)\n";
+
+    int dane1[] = {11, 20, 30, 40};
+    int dane2[] = {10, 21, 30, 41};
+    const int n = 4;
+    if (srednia(dane1, n) != 10.25) {
+        std::cerr << "FAIL: 1\n";
         return 1;
     }
 
-    if (add(-1, 1) != 0) {
-        std::cerr << "FAIL: add(-1, 1)\n";
+    if (srednia(dane2, n) != 10.5) {
+        std::cerr << "FAIL: 2\n";
         return 1;
     }
 
