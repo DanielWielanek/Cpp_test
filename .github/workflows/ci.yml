@@ -39,6 +39,10 @@ jobs:
         with:
           name: compiled-programs
 
+
+      - name: Make executables runnable
+        run: chmod +x program.exe test.exe
+
       - name: Test test.exe
         run: ./test.exe
 
