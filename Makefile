@@ -6,8 +6,8 @@ all: program.exe
 program.exe: src/main.cpp src/math.hpp
 	$(CXX) $(CXXFLAGS) src/main.cpp -o program.exe
 
-test.exe: tests/test.cpp src/math.hpp
-	$(CXX) $(CXXFLAGS) tests/test.cpp -o test.exe
+test.exe: src/test.cpp src/math.hpp
+	$(CXX) $(CXXFLAGS) src/test.cpp -o test.exe
 
 clean:
 	rm -f program.exe test.exe
