@@ -14,8 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Compile program and tests
+      - name: Build program
         run: make
+
+      - name: Build tests
+        run: make test.exe
 
       - name: Save executables
         uses: actions/upload-artifact@v4
@@ -36,10 +39,10 @@ jobs:
         with:
           name: compiled-programs
 
-      - name: Run unit tests
+      - name: Test test.exe
         run: ./test.exe
 
-      - name: Run program
+      - name: Test program.exe
         run: |
           output=$(./program.exe)
           echo "$output"
