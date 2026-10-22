@@ -39,19 +39,15 @@ jobs:
         with:
           name: compiled-programs
 
-
       - name: Make executables runnable
         run: chmod +x program.exe test.exe
+
+      - name: Test test.exe
+        run: ./test.exe
 
       - name: Test program.exe
         run: |
           output=$(./program.exe)
           echo "$output"
-          test "$output" = "OK"
-          
-          
-      - name: Test test.exe
-        run: ./test.exe
-
-
+          test "$output" = "Wynik: 5"
 
