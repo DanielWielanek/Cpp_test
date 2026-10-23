@@ -8,12 +8,12 @@ int main() {
     int dane2[] = {10, 21, 30, 41};
     const int n = 4;
     double epsilon = 0.0001;
-    if (fabs(srednia(dane1, n) - 10.25)>epsilon) {
+    if (fabs(srednia(dane1, n) - 25.25)>epsilon) {
         std::cerr << "FAIL: 1\n";
         return 1;
     }
 
-    if (fabs(srednia(dane2, n) - 10.5)>epsilon) {
+    if (fabs(srednia(dane2, n) - 25.5)>epsilon) {
         std::cerr << "FAIL: 2\n";
         return 1;
     }
