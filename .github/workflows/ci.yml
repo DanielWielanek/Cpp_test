@@ -49,5 +49,4 @@ jobs:
         run: |
           output=$(./program.exe)
           echo "$output"
-          test "$output" = "Womp Womp"
-
+          test "$output" = "OK"
